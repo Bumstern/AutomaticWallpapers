@@ -1,13 +1,9 @@
 #define CURL_STATICLIB
-#include <vector>
-#include <fstream>
-#include <string>
-
 #include "Gui.h"
-
-#include "rapidjson/document.h"
+#include <direct.h>
 
 int main(int argc, char** argv) {
+    _mkdir("tempFiles");
     Gui win("AutoWallpapers");
     return Fl::run();
 }
